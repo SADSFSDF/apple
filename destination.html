@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="zh-CN" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>目的地</title>
+<link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+<div class="header">
+	<div class="layout clearfix" id="nav">
+    	<div class="logo">LOGO</div>
+        <div class="nav">
+        	<a href="index.html">首页</a>
+            <a href="trip.html">订制行程</a>
+            <a href="destination.html" class="selected">目的地</a>
+            <a href="strategy.html">游记攻略</a>
+            <a href="consultant.html">导游顾问</a>
+            <a href="about.html">关于我们</a>
+        </div>
+        <div class="header_right">
+            <span>查看行程&nbsp;&nbsp;<img src="./images/mark.png" /></span>
+            <a href="javascript:;"><img src="./images/message.png" />&nbsp;消息(1234)</a>&nbsp;&nbsp;&nbsp;
+            <a href="javascript:;"><img src="./images/cart.png" />&nbsp;&nbsp;购物车</a>&nbsp;&nbsp;&nbsp;
+            <span><a href="usercenter.html"><img src="./images/photo.png" class="photo"  />&nbsp;&nbsp;昵称昵称</a></span>
+        </div>
+    </div>
+</div>
+<div class="dest_banner">
+	<div class="layout clearfix">
+    	<div class="d_b_l">
+        	<h2>I wanna go to</h2>
+            <div class="in">
+            	<input type="text" value="我想去...." class="text" />
+                <input type="button" value="" class="btn" />
+            </div>
+            <div class="city">
+            	<span>厦门</span>
+                <span>苏州</span>
+                <span>南京</span>
+                <span>台湾</span>
+            </div>
+        </div>
+       <!--  <div class="d_b_r">
+        	<h2>趁年轻，多出去走走</h2>
+            <div class="t">
+            	<p>年轻真好，有激情有精力</p>
+                <p>你可以在960万平方公里的土地上</p>
+                <p>探寻名山大川、名胜古迹 感悟岁月的独特韵致和魅力</p>
+                <p>你还可以迈出国门踏上旅程 领略多姿多彩的异域风情</p>
+                <p>喵爪，用心为你定制每一次 不被琐事困扰的深度旅行</p>
+                <p>只为你，提升视野广度 只为你，增加人生厚度</p>
+            </div>
+        </div> -->
+    </div>
+</div>
+<div class="destination">
+	<div class="layout">
+    	<h1>推荐目的地</h1>
+        <div class="dest_tltle">
+        	<a href="javascript:;" class="selected">国内</a>
+            <a href="javascript:;">港澳台</a>
+            <a href="javascript:;">日本</a>
+            <a href="javascript:;">东南亚</a>
+            <a href="javascript:;">南亚 西亚</a>
+            <a href="javascript:;">欧洲 美洲</a>
+            <a href="javascript:;">澳洲 非洲</a>
+            <a href="javascript:;"></a>
+        </div>
+        <div class="dest_list clearfix">
+        	<div class="d_list clearfix">
+            	<div class="t">直辖市</div>
+                <div class="c">
+                	<span>北京</span>
+                    <span>上海</span>
+                    <span>重庆</span>
+                    <span>天津</span>
+                </div>
+            </div>
+            <div class="d_list mar clearfix">
+            	<div class="t">西藏 贵州</div>
+                <div class="c">
+                	<span>丽江</span>
+                    <span>大理</span>
+                    <span>昆明</span>
+                    <span>双廊</span>
+                    <span>泸沽湖</span>
+                    <span>西双版纳</span>
+                </div>
+            </div>
+            <div class="d_list clearfix">
+            	<div class="t">云南</div>
+                <div class="c">
+                	<span>丽江</span>
+                    <span>大理</span>
+                    <span>昆明</span>
+                    <span>双廊</span>
+                    <span>泸沽湖</span>
+                    <span>西双版纳</span>
+                    <span>西双版纳</span>
+                    <span>速河</span>
+                    <span>腾冲</span>
+                    <span>雨崩</span>
+                </div>
+            </div>
+            <div class="d_list mar clearfix">
+            	<div class="t">西北</div>
+                <div class="c">
+                	<span>丽江</span>
+                    <span>大理</span>
+                    <span>昆明</span>
+                    <span>双廊</span>
+                    <span>泸沽湖</span>
+                    <span>西双版纳</span>
+                    <span>西双版纳</span>
+                    <span>速河</span>
+                    <span>腾冲</span>
+                    <span>雨崩</span>
+                </div>
+            </div>
+            <div class="d_list clearfix">
+            	<div class="t">四川</div>
+                <div class="c">
+                	<span>丽江</span>
+                    <span>大理</span>
+                    <span>昆明</span>
+                    <span>双廊</span>
+                    <span>泸沽湖</span>
+                    <span>西双版纳</span>
+                    <span>西双版纳</span>
+                    <span>速河</span>
+                    <span>腾冲</span>
+                    <span>雨崩</span>
+                </div>
+            </div>
+            <div class="d_list mar clearfix">
+            	<div class="t">山东 山西</div>
+                <div class="c">
+                	<span>丽江</span>
+                    <span>大理</span>
+                    <span>昆明</span>
+                    <span>双廊</span>
+                    <span>泸沽湖</span>
+                    <span>西双版纳</span>
+                    <span>西双版纳</span>
+                    <span>速河</span>
+                    <span>腾冲</span>
+                    <span>雨崩</span>
+                </div>
+            </div>
+            <div class="d_list clearfix">
+            	<div class="t">浙江</div>
+                <div class="c">
+                	<span>丽江</span>
+                    <span>大理</span>
+                    <span>昆明</span>
+                    <span>双廊</span>
+                    <span>泸沽湖</span>
+                    <span>西双版纳</span>
+                </div>
+            </div>
+            <div class="d_list mar clearfix">
+            	<div class="t">湖南 湖北</div>
+                <div class="c">
+                	<span>丽江</span>
+                    <span>大理</span>
+                    <span>昆明</span>
+                    <span>双廊</span>
+                    <span>泸沽湖</span>
+                    <span>西双版纳</span>
+                </div>
+            </div>
+            <div class="d_list clearfix">
+            	<div class="t">海南 福建</div>
+                <div class="c">
+                	<span>丽江</span>
+                    <span>大理</span>
+                    <span>昆明</span>
+                    <span>双廊</span>
+                    <span>泸沽湖</span>
+                    <span>西双版纳</span>
+                </div>
+            </div>
+            <div class="d_list mar clearfix">
+            	<div class="t">安徽 江西</div>
+                <div class="c">
+                	<span>丽江</span>
+                    <span>大理</span>
+                    <span>昆明</span>
+                    <span>双廊</span>
+                    <span>泸沽湖</span>
+                    <span>西双版纳</span>
+                </div>
+            </div>
+            <div class="d_list clearfix">
+            	<div class="t">江苏</div>
+                <div class="c">
+                	<span>丽江</span>
+                    <span>大理</span>
+                    <span>昆明</span>
+                    <span>双廊</span>
+                    <span>泸沽湖</span>
+                    <span>西双版纳</span>
+                </div>
+            </div>
+            <div class="d_list mar clearfix">
+            	<div class="t">河南 河北</div>
+                <div class="c">
+                	<span>丽江</span>
+                    <span>大理</span>
+                    <span>昆明</span>
+                    <span>双廊</span>
+                    <span>泸沽湖</span>
+                    <span>西双版纳</span>
+                </div>
+            </div>
+            <div class="d_list bor clearfix">
+            	<div class="t">广东 广西</div>
+                <div class="c">
+                	<span>丽江</span>
+                    <span>大理</span>
+                    <span>昆明</span>
+                    <span>双廊</span>
+                    <span>泸沽湖</span>
+                    <span>西双版纳</span>
+                    <span>西双版纳</span>
+                    <span>速河</span>
+                    <span>腾冲</span>
+                    <span>雨崩</span>
+                </div>
+            </div>
+            <div class="d_list bor mar clearfix">
+            	<div class="t">内蒙古 东北</div>
+                <div class="c">
+                	<span>丽江</span>
+                    <span>大理</span>
+                    <span>昆明</span>
+                    <span>双廊</span>
+                    <span>泸沽湖</span>
+                    <span>西双版纳</span>
+                    <span>西双版纳</span>
+                    <span>速河</span>
+                    <span>腾冲</span>
+                    <span>雨崩</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hot_destination">
+	<div class="layout">
+    	<h1>热门目的地</h1>
+        <div class="hot_list clearfix">
+        	<div class="hot_l">
+            	<div class="hot1">
+                	<div class="t"><span>塞班</span></div>
+                </div>
+                <div class="hot2">
+                	<div class="t"><span>旧金山</span></div>
+                </div>
+            </div>
+            <div class="hot_c">
+            	<div class="t"><span>塔克拉玛干</span></div>
+            </div>
+            <div class="hot_r">
+            	<div class="hot1">
+                	<div class="t"><span>玉龙</span></div>
+                </div>
+                <div class="hot2">
+                	<div class="t"><span>曼谷</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="phb">
+	<div class="layout">
+    	<h1>目的地排行榜</h1>
+    	<div class="phb_selected">
+        	<span>选择国家</span>
+        </div>
+        <div class="phb_list clearfix">
+        	<div class="p_list">
+            	<img src="./images/price.png" />
+                <ul>
+                	<li><span>No1</span>苏州<em>SUZHOU</em> </li>
+                    <li><span>No2</span>攀枝花<em>PANZHIHUA</em> </li>
+                    <li><span>No3</span>阿尔山自治区<em>AERSHAN</em> </li>
+                    <li><span>No4</span>上海<em>SHANGHAI</em> </li>
+                    <li><span>No5</span>南京<em>NANJIN</em> </li>
+                </ul>
+                <div class="more"><a href="javascript:;">查看更多&nbsp;&nbsp;&gt;</a></div>
+            </div>
+       		<div class="p_list">
+            	<img src="./images/level.png" />
+                <ul>
+                	<li><span>No1</span>苏州<em>SUZHOU</em> </li>
+                    <li><span>No2</span>攀枝花<em>PANZHIHUA</em> </li>
+                    <li><span>No3</span>阿尔山自治区<em>AERSHAN</em> </li>
+                    <li><span>No4</span>上海<em>SHANGHAI</em> </li>
+                    <li><span>No5</span>南京<em>NANJIN</em> </li>
+                </ul>
+                <div class="more"><a href="javascript:;">查看更多&nbsp;&nbsp;&gt;</a></div>
+            </div>
+            <div class="p_list">
+            	<img src="./images/grade.png" />
+                <ul>
+                	<li><span>No1</span>苏州<em>SUZHOU</em> </li>
+                    <li><span>No2</span>攀枝花<em>PANZHIHUA</em> </li>
+                    <li><span>No3</span>阿尔山自治区<em>AERSHAN</em> </li>
+                    <li><span>No4</span>上海<em>SHANGHAI</em> </li>
+                    <li><span>No5</span>南京<em>NANJIN</em> </li>
+                </ul>
+                <div class="more"><a href="javascript:;">查看更多&nbsp;&nbsp;&gt;</a></div>
+            </div>
+    	</div>
+    </div>
+</div>
+<div class="footer">
+	<div class="layout clearfix">
+    	<div class="f_l clearfix">
+        	<dl>
+            	<dt>Kanbio</dt>
+                <dd>Home</dd> 
+                <dd>Tour</dd> 
+                <dd>Pricing</dd> 
+                <dd>Add-Ons</dd> 
+                <dd>Security</dd> 
+                <dd>Button & Widget</dd>
+            </dl>
+            <dl>
+            	<dt>Community</dt>
+                <dd>Customers</dd> 
+                <dd>Webinars</dd> 
+                <dd>Help & Support</dd> 
+                <dd>Blog</dd> 
+                <dd>Resources</dd> 
+                <dd>API</dd>
+            </dl>
+            <dl>
+            	<dt>Company</dt>
+                <dd>About Us</dd> 
+                <dd>Made on Earth</dd> 
+                <dd>Press</dd> 
+                <dd>Careers</dd> 
+                <dd>Legal</dd> 
+                <dd>Contact Us</dd>
+            </dl>
+        </div>
+        <div class="f_r">
+        	<h2><img src="./images/f_icon.png" />Kanbio</h2>
+            <div class="in"><input type="text" value="" class="text" /></div>
+            <div class="in"><input type="text" value="" class="text" /></div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    document.getElementById("nav").onclick=function(){
+        window.location.href="addressDetail.html" 
+    }
+</script>
+</html>

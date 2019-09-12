@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="zh-CN" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>注册</title>
+<link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="./css/regist.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+<div class="header" id="nav">
+	<div class="layout clearfix">
+    	<div class="logo">LOGO</div>
+        <div class="nav">
+        	<a href="index.html" >欢迎登录</a>
+        </div>
+        <div class="header_right">
+            <a href="javascript:;" class="main_curble"><img src="./images/tel.png" class="main_curble_img f1Img" />&nbsp;020-154-36558744</a>&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+</div>
+<div class="banner">
+	<a href="javascript:;"><img src="./images/banner_3.png" /></a>
+    <div class="mask"></div>
+    <div class="dia_b">
+        <h1>快速注册账号<img src="images/diaClose.png" class="close"></h1>
+        <div class="line"></div>
+        <div class="formD " id="phoneEy"><span>手机号码</span><input placeholder="请输入您的手机号"><img src="images/inputMes.png" class="ipT"><span class="errorC">请正确填写手机号码</span></div>
+        <div class="formD " id="emailEy"><span>邮箱</span><input placeholder="请输入您的邮箱号码"><img src="images/inputMes.png" class="ipT"><span class="errorC">请输入您的邮箱号码</span></div>
+        <div class="formD"><span>滑块验证</span>
+            <div id="verify_box">
+                <div id="verify_xbox">
+                    <div id="btn">
+                        <img src="images/dragT.jpg">
+                    </div>
+                </div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;按住滑块，拖动到最右边
+            </div>
+        </div>
+        <div class="formD"><span>短信验证码</span><input placeholder="请输入短信验证码"><div class="hq">获取验证码</div></div>
+        <div class="formD " id="passwordEy"><span>登录密码</span><input placeholder="设置登录密码"></div>
+        <div class="formb" id="formb">下一步</div>
+    </div>
+</div>
+<div class="main_footer_content">
+    <div class="main_footer_cl">
+        <div>
+            <h1>购物指南</h1>
+            <div>购买流程</div>
+            <div>发票须知</div>
+            <div>常见问题</div>
+            <div>积分规则</div>
+            <div>工豆规则</div>
+        </div>
+        <div>
+            <h1>如何支付</h1>
+            <div>支付方式</div>
+        </div>
+        <div>
+            <h1>配送政策</h1>
+            <div>配送说明</div>
+            <div>配送通知</div>
+            <div>验货签收</div>
+            <div>配送答疑</div>
+        </div>
+        <div>
+            <h1>售后服务</h1>
+            <div>退换货范围</div>
+            <div>退换货细则</div>
+            <div>退款说明</div>
+            <div>售后联系方式</div>
+        </div>
+        <div>
+            <h1>关于我们</h1>
+            <div>公司介绍</div>
+            <div>联系方式</div>
+            <div>加入我们</div>
+        </div>
+    </div>
+    <div class="main_footer_cr">
+        <div class="boxD"></div>
+        <div class="boxT">扫码下载&nbsp;App</div>
+        <div class="codeD">
+            <div><img src="images/ios.png">
+            <span>iPhone</span></div>
+             <div><img src="images/android.png">
+            <span>Android</span></div>
+        </div>
+    </div>
+</div>
+<div class="main_footer">
+    <p>Copyright@ 2012-2018 vipmro.All Right Reserved 版权所有</p>
+    <p>友情链接：<span>ABB官网</span><span>施耐德官网</span><span>德力西官网</span><span>欧姆龙官网</span><span>费斯托官网</span><span>SMC官网</span><span>亚德客官网</span><span>3M官网</span><span>代尔塔官网</span><span>活为你而官网</span><span>梅斯安官网</span><span>世达官网</span><span>德世官网</span></p>
+</div>
+</body>
+<script type="text/javascript">
+    var box = document.getElementById('verify_box');
+    var xbox = document.getElementById('verify_xbox');
+    var element = document.getElementById('btn');
+    var b = box.offsetWidth;
+    var o = element.offsetWidth;
+    element.ondragstart = function() {
+        return false;
+    };
+    element.onselectstart = function() {
+        return false;
+    };
+    element.onmousedown = function(e) {
+        var disX = e.clientX - element.offsetLeft;
+        document.onmousemove = function(e) {
+            var l = e.clientX - disX + o;
+            if(l < o) {
+                l = o
+            }
+            if(l > b) {
+                l = b
+            }
+            xbox.style.width = l + 'px';
+        };
+        document.onmouseup = function(e) {
+            var l = e.clientX - disX + o;
+            if(l < b) {
+                l = o
+            } else {
+                l = b;
+                xbox.innerHTML = '验证通过<div id="btn"><img src="images/dragT.jpg"/></div>';
+            }
+            xbox.style.width = l + 'px';
+            document.onmousemove = null;
+            document.onmouseup = null;
+        };
+    }
+    document.getElementById('formb').onclick=function(){
+        document.getElementById('emailEy').style.display="block";
+        document.getElementById('phoneEy').style.display="none"
+        document.getElementById('passwordEy').style.display="none"
+        
+    };
+    document.getElementById("nav").onclick=function(){
+        window.location.href="destination.html" 
+    }
+</script>
+</html>

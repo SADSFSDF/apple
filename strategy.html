@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="zh-CN" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>注册</title>
+<link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="./css/strategy.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+<div class="header" id="nav">
+    <div class="layout clearfix">
+        <div class="logo">LOGO</div>
+        <div class="nav">
+            <a href="index.html" >攻略撰写</a>
+        </div>
+        <div class="header_right">
+            <a href="javascript:;" class="main_curble"><img src="./images/tel.png" class="main_curble_img f1Img" />&nbsp;020-154-36558744</a>&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+    <div class="s_t">
+        <div class="s_t_up">
+            <div class="s_t_up_inner">
+                <div class="s_t_up_load_wrap">
+                    <div class="s_t_up_load">
+                        <img src="images/add.png">
+                    </div>
+                    <div class="s_t_up_loadFn">
+                        <h1>设置游记头图</h1>
+                        <div>图片选择尺寸大于1689PX的高清大图,如相机原图</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+                <div class="s_t_sea">
+                    <span>行程：</span>
+                    <input type="text" placeholder="某地->某地->某某地->某地某地->某某地->某某某地" id="searchInput">
+                    <img src="images/gl_2.png">
+                    <div class="searchForm" id="searchForm">
+                        <div>某地->某地->某某地->某地某地->某某地->某某某地->某地某地->某某地->某某某地</div>
+                        <div>某地->某地->某某地->某地某地->某某地->某某某地->某地某地->某某地->某某某地</div>
+                        <div>某地->某地->某某地->某地某地->某某地->某某某地->某地某地->某某地->某某某地</div>
+                        <div>某地->某地->某某地->某地某地->某某地->某某某地->某地某地->某某地->某某某地</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="s_t_content">
+            <div class="s_t_content_l">
+                  <input type="text" placeholder="填写游记标题">
+                  <textarea>从这里开始</textarea>
+            </div>
+            <div class="s_t_content_r">
+                 <div><img src="images/gl_3.png"><span>插入图片</span></div>
+                 <div><img src="images/gl_4.png"><span>插入表情</span></div>
+                 <div><img src="images/gl_5.png"><span>插入视频</span></div>
+                 <div><img src="images/gl_6.png"><span>插入段落标题</span></div>
+                 <div><img src="images/gl_7.png"><span>插入游记音乐</span></div>
+                 <div><img src="images/gl_8.png"><span>上传word文档</span></div>
+            </div>
+            <div style="clear: both;"></div>
+            <div class="s_t_content_b"><div>存为草稿</div><div>预览</div><div class="selected">发表游记</div></div>
+            <div style="clear: both;"></div>
+        </div>
+</div>
+<div class="footer">
+    <div class="layout clearfix">
+        <div class="f_l clearfix">
+            <dl>
+                <dt>Kanbio</dt>
+                <dd>Home</dd> 
+                <dd>Tour</dd> 
+                <dd>Pricing</dd> 
+                <dd>Add-Ons</dd> 
+                <dd>Security</dd> 
+                <dd>Button & Widget</dd>
+            </dl>
+            <dl>
+                <dt>Community</dt>
+                <dd>Customers</dd> 
+                <dd>Webinars</dd> 
+                <dd>Help & Support</dd> 
+                <dd>Blog</dd> 
+                <dd>Resources</dd> 
+                <dd>API</dd>
+            </dl>
+            <dl>
+                <dt>Company</dt>
+                <dd>About Us</dd> 
+                <dd>Made on Earth</dd> 
+                <dd>Press</dd> 
+                <dd>Careers</dd> 
+                <dd>Legal</dd> 
+                <dd>Contact Us</dd>
+            </dl>
+        </div>
+        <div class="f_r">
+            <h2><img src="./images/f_icon.png" />Kanbio</h2>
+            <div class="in"><input type="text" value="" class="text" /></div>
+            <div class="in"><input type="text" value="" class="text" /></div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    document.getElementById("searchInput").onfocus=function(){
+        document.getElementById("searchForm").style.display="block";
+    }
+    document.getElementById("searchInput").onblur=function(){
+        document.getElementById("searchForm").style.display="none";
+    }
+    document.getElementById("nav").onclick=function(){
+        window.location.href="customized.html" 
+    }
+</script>
+</html>
